@@ -4,18 +4,23 @@ Kaavio siitä, mitä tapahtuu, kun käyttäjä luo uuden muistiinpanon ollessaan
 sequenceDiagram
     participant browser
     participant server
-    
-    browser->>server: Tähän joku get?
+
+    browser->>server: POST
     activate server
     server-->>browser: Jotain serveriltä takaisin?
     deactivate server
     
-    browser->>server: Tähän joku get?
+    browser->>server: GET
+    activate server
+    server-->>browser: Jotain serveriltä takaisin?
+    deactivate server
+    
+    browser->>server: GET
     activate server
     server-->>browser: Jotain serveriltä
     deactivate server
     
-    browser->>server: Tähän joku get?
+    browser->>server: GET
     activate server
 
     Note right of browser: Kommentti!
@@ -25,7 +30,7 @@ sequenceDiagram
     
     Note right of browser: Kommentti
     
-    browser->>server: Tähän ehkä jokin get
+    browser->>server: GET
     activate server
     server-->>browser: Mitä tulee palvelimelta
     deactivate server    
