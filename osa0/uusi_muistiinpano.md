@@ -17,6 +17,9 @@ sequenceDiagram
     
     browser->>server: Tähän joku get?
     activate server
+
+    Note right of browser: Kommentti!
+
     server-->>browser: Jotain serveriltä
     deactivate server
     
