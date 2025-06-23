@@ -1,3 +1,5 @@
+Sivulta https://fullstackopen.com/osa0/web_sovelluksen_toimintaperiaatteita#single-page-app löytyvä sekvenssikaavio jossa kuvataan sivun https://studies.cs.helsinki.fi/exampleapp/notes avaamisen aikaansaama tapahtumasarja.
+
 ```mermaid
 sequenceDiagram
     participant browser
