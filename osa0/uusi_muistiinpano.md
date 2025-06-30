@@ -7,8 +7,9 @@ sequenceDiagram
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note + Form data
     activate server
-    Note right of browser: Server creates a new note object and adds it to the notes-list, that gets rendered when the page reloads
     server-->>browser: Redirect: 302
+    Note right of browser: Server creates a new note object and adds it to the notes-list, that gets rendered when the page         reloads
+
     deactivate server
     
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
