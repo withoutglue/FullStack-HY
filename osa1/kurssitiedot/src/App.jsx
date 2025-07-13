@@ -1,7 +1,7 @@
 
 /* Tässä on refaktoroitu sovelluksen koodi siten, 
-  että se koostuu kolmesta uudesta komponentista: 
-  Header, Content ja Total. 
+  että se koostuu neljästä uudesta komponentista: 
+  Header, Part, Content ja Total. 
   
   */
 const Header = (props) => {
